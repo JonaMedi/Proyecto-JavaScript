@@ -42,8 +42,11 @@ function productoNuevo() {
         descuento = 10;
     }
     let precioFinal = valorProducto(producto1 + producto2, descuento);
+    alert(`Tu precio final con descuento es ${precioFinal}`)
     return precioFinal;
 }
+
+productoNuevo();
 
 class Productos {
     constructor(nombre, categoria, precio) {
@@ -87,3 +90,5 @@ const pintarHTML = () => {
 
     })
 }
+
+pintarHTML();
